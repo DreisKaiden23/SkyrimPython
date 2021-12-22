@@ -46,5 +46,28 @@ if choice1 == 3:
         print ("How did you fail to turn on a computer! I'm impressed. The game has to stop, but you must have put 0 in as your reflex! I'm impressed!\nGAME OVER\n")
         exit()
 
-choice2 = int(input(""))
-    
+choice2 = int(input("Bob ross walks into the room, he wants his money back that you stole 20 years prior. (1) Attempt to fight Bob Ross (very hard), (2) Reason with Bob Ross, (3) Intimidate Bob Ross with your coolness :sunglasses:\n1/2/3\n"))
+
+if choice1 == 1:
+    roll2 = random.randrange(0, strength)
+    if roll2 >= 50:
+        print("You win the duel against bob ross! He forgets everything about the $5 you stole from him 20 years ago.")
+    else:
+        print ("Bob Ross dumpsters you in this fight, he is simply too powerful. I told you this was very hard!\nGAME OVER\n")
+        exit()
+
+if choice1 == 2:
+    roll2 = random.randrange(0, intellect)
+    if roll2 >= 20:
+        print("Bob ross is a very reasonable person, he realizes that it is dumb to get in an argument over $5 from 20 years ago!")
+    else:
+        print ("Bob Ross does not want to reason HE WANTS HIS MONEY BACK!!! He paints your whole face out of extinction.\nGAME OVER\n")
+        exit()
+
+if choice1 == 3:
+    roll2 = random.randrange(0, coolness)
+    if roll2 >= 30:
+        print("Bob Ross is scared of you, you are way too cool for him. He bows down to your glory")
+    else:
+        print ("Bob Ross is way cooler than you. It was a mistake to think that you could EVER be cooler than Bob Ross! How foolish!\nGAME OVER\n")
+        exit()
